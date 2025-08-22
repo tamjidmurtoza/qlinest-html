@@ -454,10 +454,10 @@
   ===============================================================*/
   function aosInit() {
     AOS.init({
-      offset: 120,
+      offset: 100,
       duration: 800,
       easing: "ease-in-out",
-      once: false,
+      once: true,
       mirror: false,
     });
   }
