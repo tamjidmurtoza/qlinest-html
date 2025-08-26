@@ -141,6 +141,8 @@
 
     .cs_logo_wrapper {
       grid-template-columns: repeat(2, auto);
+      gap: 20px 50px;
+      justify-content: center;
     }
   }
 
