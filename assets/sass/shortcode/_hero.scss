@@ -2,7 +2,7 @@
   12. Hero
  ===============================================================*/
 .cs_hero_style_1 {
-  padding: 150px 0 80px;
+  padding: 150px 16px 80px;
 
   .cs_hero_content {
     width: min(55vw, 600px);
@@ -33,7 +33,6 @@
     display: flex;
     align-items: center;
     gap: 24px 32px;
-    flex-wrap: wrap;
   }
 
   .cs_satisfied_customers {
@@ -78,10 +77,10 @@
   }
 
   .cs_logo_wrapper {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     justify-content: space-between;
-    gap: 20px;
+    gap: 30px 20px;
     flex-wrap: wrap;
   }
 
@@ -90,21 +89,28 @@
     left: 20%;
   }
 
-  @media (max-width:1199px) {
+  @media (max-width: 1399px) {
+
     .container {
       max-width: 100%;
     }
+
+    .cs_hero_thumbnail {
+      right: 16px;
+    }
+  }
+
+  @media (max-width:1199px) {
 
     .cs_hero_content {
       width: min(59vw, 600px);
     }
 
-    .cs_hero_thumbnail {
-      right: 12px;
-    }
+
   }
 
   @media (max-width:991px) {
+    padding: 96px 16px 32px;
 
     .cs_hero_content {
       width: 100%;
@@ -116,7 +122,12 @@
       margin-bottom: 24px;
     }
 
+    .cs_hero_btns_wrapper {
+      gap: 24px;
+    }
+
     .cs_satisfied_customers {
+      width: min(100%, 265px);
 
       .cs_customer_thumbnail {
         width: 46px;
@@ -127,11 +138,26 @@
         font-size: 14px;
       }
     }
+
+    .cs_logo_wrapper {
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+
+  @media (max-width:575px) {
+    .cs_hero_btns_wrapper {
+      flex-direction: column;
+    }
+
+    .cs_btn_style_1 {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 
 .cs_hero_style_2 {
-  padding: 150px 0 80px;
+  padding: 150px 16px 80px;
 
   .cs_hero_content {
     width: min(100%, 862px);
@@ -141,6 +167,10 @@
   .cs_hero_subtitle {
     padding: 6px 16px;
     background: rgba(255, 255, 255, 0.20);
+  }
+
+  .cs_hero_desc {
+    opacity: 0.8;
   }
 
   .cs_vectoe_shape1 {
@@ -154,9 +184,14 @@
   }
 
   @media (max-width:991px) {
-    padding: 100px 0 32px;
+    padding: 96px 16px 32px;
+
+    .container {
+      max-width: 100%;
+    }
 
     .cs_hero_content {
+      width: 100%;
       align-items: flex-start;
       text-align: left !important;
     }

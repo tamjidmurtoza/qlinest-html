@@ -69,10 +69,14 @@
   }
 
   @media (max-width: 991px) {
-    padding: 20px 0;
+    padding: 20px 16px;
 
     .cs_footer_main {
       padding: 24px 0;
+
+      .cs_footer_menu {
+        gap: 16px;
+      }
     }
 
     .cs_footer_bottom {

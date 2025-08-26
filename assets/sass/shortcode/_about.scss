@@ -39,6 +39,7 @@
   }
 }
 
+
 .cs_about_style_2 {
   width: min(100%, 1240px);
   margin: 0 auto;
@@ -75,6 +76,7 @@
   }
 
   @media (max-width:991px) {
+    padding: 0 4px;
 
     .cs_about_content,
     .cs_funfact_wrapper_style_1 {
