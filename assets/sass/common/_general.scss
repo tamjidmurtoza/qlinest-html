@@ -20,7 +20,7 @@
   font-size: 18px;
   line-height: 1.67em;
 
-  @media (max-width:575px) {
+  @media (max-width: 575px) {
     font-size: 16px;
   }
 }
@@ -29,7 +29,7 @@
   font-size: 20px;
   line-height: 1.3em;
 
-  @media (max-width:575px) {
+  @media (max-width: 575px) {
     font-size: 18px;
   }
 }
@@ -38,17 +38,16 @@
   font-size: 24px;
   line-height: 1.25em;
 
-  @media (max-width:575px) {
+  @media (max-width: 575px) {
     font-size: 22px;
   }
 }
-
 
 .cs_fs_32 {
   font-size: 32px;
   line-height: 1.313em;
 
-  @media (max-width:575px) {
+  @media (max-width: 575px) {
     font-size: 24px;
   }
 }
@@ -57,7 +56,7 @@
   font-size: 36px;
   line-height: 1.28em;
 
-  @media (max-width:575px) {
+  @media (max-width: 575px) {
     font-size: 24px;
   }
 }
@@ -66,25 +65,24 @@
   font-size: 46px;
   line-height: 1.28em;
 
-  @media (max-width:1199px) {
+  @media (max-width: 1199px) {
     font-size: 42px;
   }
 
-  @media (max-width:575px) {
+  @media (max-width: 575px) {
     font-size: 28px;
   }
-
 }
 
 .cs_fs_56 {
   font-size: 56px;
   line-height: 1.25em;
 
-  @media (max-width:991px) {
+  @media (max-width: 991px) {
     font-size: 46px;
   }
 
-  @media (max-width:575px) {
+  @media (max-width: 575px) {
     font-size: 28px;
   }
 }
@@ -93,19 +91,18 @@
   font-size: 72px;
   line-height: 1.25em;
 
-  @media (max-width:1199px) {
+  @media (max-width: 1199px) {
     font-size: 64px;
   }
 
-  @media (max-width:991px) {
+  @media (max-width: 991px) {
     font-size: 56px;
   }
 
-  @media (max-width:575px) {
+  @media (max-width: 575px) {
     font-size: 30px;
   }
 }
-
 
 /*=====================================  
   Classess for Fonts Weight
@@ -356,7 +353,7 @@
     transform-origin: top right;
   }
 
-  >* {
+  > * {
     position: relative;
     z-index: 1;
   }
@@ -450,7 +447,7 @@
     letter-spacing: -1px;
   }
 
-  @media (max-width:991px) {
+  @media (max-width: 991px) {
     align-items: flex-start;
     text-align: left !important;
   }
@@ -474,8 +471,7 @@
     letter-spacing: -1px;
   }
 
-
-  @media (max-width:991px) {
+  @media (max-width: 991px) {
     flex-direction: column;
 
     .cs_section_heading_left,
@@ -483,7 +479,6 @@
       width: 100%;
     }
   }
-
 }
 
 .cs_zoom {
@@ -501,13 +496,13 @@
 /*=============================================  
   Bootstrap Classess 
 ===============================================*/
-@media (min-width:1400px) {
+@media (min-width: 1400px) {
   .container {
     max-width: 1264px;
   }
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .container {
     max-width: 100%;
   }
@@ -525,8 +520,8 @@
   overflow: hidden;
 
   &::before {
-    content: '\f005\f005\f005\f005\f005';
-    font-family: 'Font Awesome 7 Free';
+    content: "\f005\f005\f005\f005\f005";
+    font-family: "Font Awesome 7 Free";
     position: absolute;
     top: 0;
     left: 0;
@@ -571,8 +566,7 @@
   Responsive For Common Component & Hide Elements
 =============================================================*/
 
-@media (max-width:991px) {
-
+@media (max-width: 991px) {
   br {
     display: none;
   }
@@ -586,7 +580,7 @@
   .cs_team_section,
   .cs_pricing_section,
   .cs_contact_section {
-    padding: 0 4px;
+    padding: 0 18px;
   }
 
   .cs_why_choose_section,
@@ -596,7 +590,6 @@
   }
 }
 
-
 .cs_custom_content_wrapper {
   width: min(100%, 1440px);
   padding: 24px;
@@ -604,5 +597,14 @@
 
   @media (max-width: 1199px) {
     padding: 20px 12px;
+  }
+  @media (max-width: 991px) {
+    padding: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }

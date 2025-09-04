@@ -7,7 +7,7 @@
   .cs_hero_content {
     width: min(55vw, 600px);
 
-    >* {
+    > * {
       position: relative;
       z-index: 1;
     }
@@ -26,7 +26,7 @@
     text-align: center;
     padding: 6px 16px;
     border-radius: 50px;
-    background: rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.2);
   }
 
   .cs_hero_btns_wrapper {
@@ -77,11 +77,14 @@
   }
 
   .cs_logo_wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    justify-content: space-between;
-    gap: 30px 20px;
+    display: flex;
+    gap: 20px 40px;
     flex-wrap: wrap;
+    max-width: 600px;
+    @media (max-width: 575px) {
+      justify-content: center;
+      gap: 20px 30px;
+    }
   }
 
   .cs_vectoe_shape1 {
@@ -90,7 +93,6 @@
   }
 
   @media (max-width: 1399px) {
-
     .container {
       max-width: 100%;
     }
@@ -100,17 +102,15 @@
     }
   }
 
-  @media (max-width:1199px) {
-
+  @media (max-width: 1199px) {
     .cs_hero_content {
       width: min(59vw, 600px);
     }
-
-
   }
 
-  @media (max-width:991px) {
-    padding: 96px 16px 32px;
+  @media (max-width: 991px) {
+    padding: 96px 18px 32px;
+    border-radius: 0;
 
     .cs_hero_content {
       width: 100%;
@@ -138,15 +138,9 @@
         font-size: 14px;
       }
     }
-
-    .cs_logo_wrapper {
-      grid-template-columns: repeat(2, auto);
-      gap: 20px 50px;
-      justify-content: center;
-    }
   }
 
-  @media (max-width:575px) {
+  @media (max-width: 575px) {
     .cs_hero_btns_wrapper {
       flex-direction: column;
     }
@@ -168,7 +162,7 @@
 
   .cs_hero_subtitle {
     padding: 6px 16px;
-    background: rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.2);
   }
 
   .cs_hero_desc {
@@ -185,8 +179,9 @@
     right: 0;
   }
 
-  @media (max-width:991px) {
+  @media (max-width: 991px) {
     padding: 96px 16px 32px;
+    border-radius: 0;
 
     .container {
       max-width: 100%;

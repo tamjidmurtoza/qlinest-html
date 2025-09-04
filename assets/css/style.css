@@ -1898,7 +1898,7 @@ label {
   .cs_team_section,
   .cs_pricing_section,
   .cs_contact_section {
-    padding: 0 4px;
+    padding: 0 18px;
   }
   .cs_why_choose_section,
   .cs_testimonial_section,
@@ -1916,7 +1916,18 @@ label {
     padding: 20px 12px;
   }
 }
+@media (max-width: 991px) {
+  .cs_custom_content_wrapper {
+    padding: 0px;
+  }
+}
 
+@media (max-width: 991px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
 /*--------------------------------------------------------------
   05. All Headers
 ----------------------------------------------------------------*/
@@ -1981,7 +1992,7 @@ label {
   cursor: pointer;
   position: absolute;
   top: 27px;
-  right: 28px;
+  right: 32px;
   z-index: 999;
 }
 .cs_site_header.cs_style_1 .cs_menu_toggle span,
@@ -2084,7 +2095,7 @@ label {
 @media (max-width: 1199px) {
   .cs_site_header.cs_style_1 .cs_main_header_in {
     height: 80px;
-    padding: 20px 28px;
+    padding: 20px 32px;
   }
   .cs_site_header.cs_style_1 .cs_main_header_right {
     display: none;
@@ -2128,6 +2139,17 @@ label {
   }
 }
 
+@media (max-width: 991px) {
+  .cs_site_header.cs_style_1 {
+    top: 0;
+  }
+  .cs_site_header.cs_style_1 .cs_main_header_in {
+    padding: 20px 18px;
+  }
+  .cs_site_header.cs_style_1 .cs_menu_toggle {
+    right: 18px;
+  }
+}
 /*==============================================================
  06. All Footer
 ================================================================*/
@@ -2857,11 +2879,16 @@ label {
   border-radius: 24px;
 }
 .cs_hero_style_1 .cs_logo_wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  justify-content: space-between;
-  gap: 30px 20px;
+  display: flex;
+  gap: 20px 40px;
   flex-wrap: wrap;
+  max-width: 600px;
+}
+@media (max-width: 575px) {
+  .cs_hero_style_1 .cs_logo_wrapper {
+    justify-content: center;
+    gap: 20px 30px;
+  }
 }
 .cs_hero_style_1 .cs_vectoe_shape1 {
   top: 0;
@@ -2882,7 +2909,8 @@ label {
 }
 @media (max-width: 991px) {
   .cs_hero_style_1 {
-    padding: 96px 16px 32px;
+    padding: 96px 18px 32px;
+    border-radius: 0;
   }
   .cs_hero_style_1 .cs_hero_content {
     width: 100%;
@@ -2904,11 +2932,6 @@ label {
   }
   .cs_hero_style_1 .cs_satisfied_customers .cs_customer_info {
     font-size: 14px;
-  }
-  .cs_hero_style_1 .cs_logo_wrapper {
-    grid-template-columns: repeat(2, auto);
-    gap: 20px 50px;
-    justify-content: center;
   }
 }
 @media (max-width: 575px) {
@@ -2946,6 +2969,7 @@ label {
 @media (max-width: 991px) {
   .cs_hero_style_2 {
     padding: 96px 16px 32px;
+    border-radius: 0;
   }
   .cs_hero_style_2 .container {
     max-width: 100%;
@@ -3957,4 +3981,4 @@ label {
     font-size: 18px;
     margin-bottom: 16px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
